@@ -74,7 +74,7 @@ Polymer({
 
   /**
    * Fired after the form is submitted and an error is received. An
-   * error message is included in event.detail.error and an 
+   * error message is included in event.detail.error and an
    * IronRequestElement is included in event.detail.request.
    *
    * @event iron-form-error
@@ -170,7 +170,7 @@ Polymer({
     if (this.allowRedirect) {
       // If we're submitting the form natively, then create a hidden element for
       // each of the values.
-      for (element in json) {
+      for (var element in json) {
         this.$.helper.appendChild(this._createHiddenElement(element, json[element]));
       }
 
